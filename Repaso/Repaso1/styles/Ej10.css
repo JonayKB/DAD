@@ -1,0 +1,29 @@
+td{
+    color: blue;
+    border: 1px solid black;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.destacada td{
+    background-color: red;
+    color: white;
+}
+.tableFoot{
+    text-align: center;
+    font-size: 12px;
+}
+th{
+    width: 170px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+caption{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
