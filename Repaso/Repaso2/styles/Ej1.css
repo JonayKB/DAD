@@ -1,0 +1,49 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+.principal {
+  display: flex;
+}
+.estudiar strong,
+.cursos strong {
+  color: purple;
+}
+
+@media (max-width: 1200px) {
+    .principal{
+        display: block;
+    }
+    .ciclos{
+        float: left;
+        margin-right: 40px;
+    }
+
+    .ciclos strong {
+    display: block;
+  }
+  .estudiar strong {
+    text-decoration: underline;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+    .ciclos{
+        float: none;
+        margin-right: 0;
+    }
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ciclos strong,
+  .estudiar strong,
+  .cursos strong {
+    display: block;
+  }
+  h2{
+    border-bottom: 1px black solid;
+  }
+}
