@@ -118,11 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"assets/songs/song1.mp3":[function(require,module,exports) {
-module.exports = "/0c484fac0ccad7c7d0e97a0cc629fdde.mp3";
+module.exports = "/song1.c629fdde.mp3";
 },{}],"assets/songs/song2.mp3":[function(require,module,exports) {
-module.exports = "/76e23d4b221f676b83fabcdefba8dc06.mp3";
+module.exports = "/song2.fba8dc06.mp3";
 },{}],"assets/songs/song3.mp3":[function(require,module,exports) {
-module.exports = "/f2507f223452729042343322809570ba.mp3";
+module.exports = "/song3.809570ba.mp3";
 },{}],"assets/songs/*.mp3":[function(require,module,exports) {
 module.exports = {
   "song1": require("./song1.mp3"),
@@ -147,17 +147,18 @@ var Song = exports.default = /*#__PURE__*/function () {
     _classCallCheck(this, Song);
     this.key = key;
     this.audioElement = new Audio(audioPath);
-    console.log(this.audioElement);
   }
   return _createClass(Song, [{
     key: "play",
     value: function play() {
       this.audioElement.play();
+      console.log("".concat(this.key, " is playing"));
     }
   }, {
     key: "pause",
     value: function pause() {
       this.audioElement.pause();
+      console.log("".concat(this.key, " is paused"));
     }
   }, {
     key: "isPlaying",
@@ -196,8 +197,10 @@ var Player = exports.default = /*#__PURE__*/function () {
       var song = this.songsMap[key];
       if (song.isPlaying()) {
         song.pause();
+        return "paused";
       } else {
         song.play();
+        return "playing";
       }
     }
   }]);
@@ -219,8 +222,11 @@ var player = new _Player.default(map);
 document.querySelectorAll('.item').forEach(function (item) {
   item.addEventListener('click', function () {
     var key = item.classList[1];
-    console.log("Clicked on ".concat(key));
-    player.playPauseSong(key);
+    if (player.playPauseSong(key) === "paused") {
+      item.classList.remove('playing');
+    } else {
+      item.classList.add('playing');
+    }
   });
 });
 },{"../assets/songs/*.mp3":"assets/songs/*.mp3","./Player.js":"js/Player.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -248,7 +254,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41431" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36323" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -14,8 +14,10 @@ export default class Player {
         let song = this.songsMap[key];
         if(song.isPlaying()){
             song.pause();
+            return "paused";
         }else{
             song.play();
+            return "playing";
         }
     }
 }
