@@ -118,11 +118,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"DEhP":[function(require,module,exports) {
-module.exports = "/DAD/song1.902f4139.mp3";
+module.exports = "/DAD/JavaSpotify/song1.902f4139.mp3";
 },{}],"duI9":[function(require,module,exports) {
-module.exports = "/DAD/song2.cb07d1cc.mp3";
+module.exports = "/DAD/JavaSpotify/song2.cb07d1cc.mp3";
 },{}],"lBIj":[function(require,module,exports) {
-module.exports = "/DAD/song3.98a5108b.mp3";
+module.exports = "/DAD/JavaSpotify/song3.98a5108b.mp3";
 },{}],"NLqZ":[function(require,module,exports) {
 module.exports = {
   "song1": require("./song1.mp3"),
@@ -230,4 +230,4 @@ document.querySelectorAll('.item').forEach(function (item) {
   });
 });
 },{"../assets/songs/*.mp3":"NLqZ","./Player.js":"ERFn"}]},{},["QvaY"], null)
-//# sourceMappingURL=/DAD/js.ea1c97e1.js.map
+//# sourceMappingURL=/DAD/JavaSpotify/js.ea1c97e1.js.map
