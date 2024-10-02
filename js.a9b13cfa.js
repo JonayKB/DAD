@@ -119,17 +119,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"DEhP":[function(require,module,exports) {
 module.exports = "/DAD/song1.902f4139.mp3";
-},{}],"duI9":[function(require,module,exports) {
-module.exports = "/DAD/song2.cb07d1cc.mp3";
 },{}],"lBIj":[function(require,module,exports) {
 module.exports = "/DAD/song3.98a5108b.mp3";
+},{}],"duI9":[function(require,module,exports) {
+module.exports = "/DAD/song2.cb07d1cc.mp3";
 },{}],"NLqZ":[function(require,module,exports) {
 module.exports = {
   "song1": require("./song1.mp3"),
-  "song2": require("./song2.mp3"),
-  "song3": require("./song3.mp3")
+  "song3": require("./song3.mp3"),
+  "song2": require("./song2.mp3")
 };
-},{"./song1.mp3":"DEhP","./song2.mp3":"duI9","./song3.mp3":"lBIj"}],"pKdB":[function(require,module,exports) {
+},{"./song1.mp3":"DEhP","./song3.mp3":"lBIj","./song2.mp3":"duI9"}],"pKdB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -230,4 +230,4 @@ document.querySelectorAll('.item').forEach(function (item) {
   });
 });
 },{"../assets/songs/*.mp3":"NLqZ","./Player.js":"ERFn"}]},{},["QvaY"], null)
-//# sourceMappingURL=/DAD/js.ea1c97e1.js.map
+//# sourceMappingURL=/DAD/js.a9b13cfa.js.map
