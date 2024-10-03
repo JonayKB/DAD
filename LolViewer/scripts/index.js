@@ -40,7 +40,7 @@ async function showChampions() {
                     </div>`).join('')}
                 </div>
             </div>
-            <p>${champion.title}</p>
+            <p>${champion.title.slice(0,1).toUpperCase()+champion.title.slice(1)}</p>
         `;
         DOM.container.appendChild(championElement);
     });
