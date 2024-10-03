@@ -1,9 +1,9 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"DEhP":[function(require,module,exports) {
-module.exports="/javaspotify/song1.902f4139.mp3";
+module.exports="/DAD/song1.902f4139.mp3";
 },{}],"duI9":[function(require,module,exports) {
-module.exports="/javaspotify/song2.cb07d1cc.mp3";
+module.exports="/DAD/song2.cb07d1cc.mp3";
 },{}],"lBIj":[function(require,module,exports) {
-module.exports="/javaspotify/song3.98a5108b.mp3";
+module.exports="/DAD/song3.98a5108b.mp3";
 },{}],"NLqZ":[function(require,module,exports) {
 module.exports={song1:require("./song1.mp3"),song2:require("./song2.mp3"),song3:require("./song3.mp3")};
 },{"./song1.mp3":"DEhP","./song2.mp3":"duI9","./song3.mp3":"lBIj"}],"pKdB":[function(require,module,exports) {
@@ -13,4 +13,4 @@ module.exports={song1:require("./song1.mp3"),song2:require("./song2.mp3"),song3:
 },{"./Song.js":"pKdB"}],"QvaY":[function(require,module,exports) {
 "use strict";var e=t(require("../assets/songs/*.mp3")),a=t(require("./Player.js"));function t(e){return e&&e.__esModule?e:{default:e}}for(var s={},r=1,l=0,n=Object.keys(e.default);l<n.length;l++){var u=n[l];s[".item-".concat(r)]=e.default[u],r++}var c=new a.default(s);document.querySelectorAll(".item").forEach(function(e){e.addEventListener("click",function(){var a=e.classList[1];"paused"===c.playPauseSong(a)?e.classList.remove("playing"):e.classList.add("playing")})});
 },{"../assets/songs/*.mp3":"NLqZ","./Player.js":"ERFn"}]},{},["QvaY"], null)
-//# sourceMappingURL=/javaspotify/js.759ac45a.js.map
+//# sourceMappingURL=/DAD/js.759ac45a.js.map
