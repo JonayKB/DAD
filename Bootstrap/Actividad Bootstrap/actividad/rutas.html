@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -57,8 +57,64 @@
     <nav class="breadcrumb bg-light p-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <a class="breadcrumb-item" href="./index.html">Portada</a>
         <span class="breadcrumb-item active" href="#">Rutas</span>
-
     </nav>
+    <div class="container">
+
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card border-success">
+                    <h3 class="card-header bg-danger text-white">Destacado</h3>
+                    <img src="../img/img/rutas-marcos-cordero.jpg" class="card-img-top" alt="Ruta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                        <p class="card-text">Ruta de 10 km que incluye trayectos de montaña y caminata.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card border-success bg-success text-white">
+                    <h6 class="card-header">Frase Célebre</h6>
+                    <div class="card-body">
+                        <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                        <p class="card-text">Ruta de 10 km que incluye trayectos de montaña y caminata.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card border-primary">
+                    <img src="../img/img/rutas-barranco-las-vacas.jpg" class="card-img-top" alt="Ruta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                        <h6 class="card-subtitle text-muted">Subitutlo</h6>
+                        <p class="card-text">Ruta de 10 km que incluye trayectos de montaña y caminata.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4 text-center">
+                <div class="card border-primary bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                        <p class="card-text">Ruta de 10 km que incluye trayectos de montaña y caminata.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="../img/img/rutas-teide.jpg" class="card-img-top" alt="Ruta 1">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Ruta de 10 km que incluye trayectos de montaña y caminata.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
