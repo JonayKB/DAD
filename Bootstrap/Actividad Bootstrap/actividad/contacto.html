@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -54,11 +54,43 @@
             </div>
         </div>
     </nav>
+
     <nav class="breadcrumb bg-light p-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <a class="breadcrumb-item" href="./index.html">Portada</a>
         <span class="breadcrumb-item active" href="#">Contacto</span>
 
     </nav>
+    <main class="container">
+        <h1>Contacta con nosotros</h1>
+        <form>
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" class="form-control" id="asunto" aria-describedby="asunto">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" aria-describedby="nombre">
+            </div>
+            <div class="form-group">
+                <label for="asunto">Email</label>
+                <input type="text" class="form-control" id="email" aria-describedby="email">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Aceptar terminos de uso</label>
+            </div>
+            <div class=" text-md-end text-lg-start d-md-block d-grid">
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+                <button type="submit" class="btn border text-muted">Cancelar</button>
+            </div>
+
+        </form>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
