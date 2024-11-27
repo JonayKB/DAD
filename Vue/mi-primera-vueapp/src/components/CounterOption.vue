@@ -6,7 +6,7 @@
         <button @click="resetCounter" class="w-100 btn btn-success p-2 m-2 d-block">Reiniciar</button>
         <button @click="double" class="w-100 btn btn-warning p-2 m-2 d-block">Duplicar</button>
         <input type="number" name="counter" id="counter" v-model="counter" class="w-100 d-block form-control">
-        <p v-if="counter > 10" class="rounded bg-danger p-3 m-3 text-light">Vaya numeraco bro</p>
+        <p v-if="counter > 10" class="rounded bg-danger p-3 m-3 text-light">¡El valor es alto!</p>
     </div>
 </template>
 <script>
